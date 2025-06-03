@@ -98,7 +98,7 @@ function Home() {
                     <Tab.Container defaultActiveKey="west">
                         <Nav variant="pills" className="justify-content-center mb-3">
                             <Nav.Item>
-                                <Nav.Link eventKey="west">West & South</Nav.Link>
+                                <Nav.Link eventKey="west">South Coast</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="east">East Coast</Nav.Link>
@@ -116,13 +116,13 @@ function Home() {
                                     <Row className="align-items-start g-3">
                                         <Col md={4}>
                                             <img
-                                                src="/images/mirissa.jpg"
+                                                src="/src/assets/fun-diving-4.jpg"
                                                 alt="Diving Mirissa"
                                                 className="img-fluid rounded-3"
                                             />
                                             <div className="mt-3">
                                                 <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12619.710364044574!2d80.4591773!3d5.9485121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae142b22c5da745%3A0x17c509b74d372ff7!2sDiving%20Mirissa!5e0!3m2!1sen!2slk!4v1687432452193!5m2!1sen!2slk"
+                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d992.1042948617126!2d80.479899!3d5.937093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13fdd8ea6306f%3A0xbe2c68b941a47aff!2sDiving%20Mirissa!5e0!3m2!1sen!2slk!4v1748949904391!5m2!1sen!2slk"
                                                     width="100%"
                                                     height="180"
                                                     style={{ border: 0 }}
@@ -149,10 +149,10 @@ function Home() {
                                             <p className="mb-1">
                                                 🔗 <a href="https://www.divingmirissa.com/" target="_blank" rel="noopener noreferrer">www.divingmirissa.com</a>
                                             </p>
-                                            <p>📞 +94 77 123 4567 | 📧 info@divingmirissa.com</p>
+                                            <p>📞 +94 71 031 0253 | 📧 info@divingmirissa.com</p>
 
                                             <a
-                                                href="https://www.divingmirissa.com/"
+                                                href="https://www.divingmirissa.com/#contact_form"
                                                 className="btn btn-outline-primary mt-2"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -221,13 +221,13 @@ function Home() {
                                     <Row className="align-items-start g-3">
                                         <Col md={4}>
                                             <img
-                                                src="/images/nilaveli.jpg"
+                                                src="/src/assets/fun-diving-4.jpg"
                                                 alt="Diving in Nilaveli"
                                                 className="img-fluid rounded-3"
                                             />
                                             <div className="mt-3">
                                                 <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12621.076566066961!2d81.1890539!3d8.7233635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5cdb53eb0c365%3A0x579d034a89b5db4e!2sNilaveli%20Diving%20Centre!5e0!3m2!1sen!2slk!4v1687432789000!5m2!1sen!2slk"
+                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7888.016861288978!2d81.191155!3d8.690747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afbbf000ab4ca19%3A0xd0ed0b4b52bc4d90!2sNilaveli%20diving%20and%20snorkeling%20tours!5e0!3m2!1sen!2slk!4v1748950009434!5m2!1sen!2slk"
                                                     width="100%"
                                                     height="180"
                                                     style={{ border: 0 }}
@@ -254,10 +254,11 @@ function Home() {
                                             <p className="mb-1">
                                                 🔗 <a href="https://www.nilavelidivingandsnorkelingtours.com/" target="_blank" rel="noopener noreferrer">www.nilavelidivingandsnorkelingtours.com</a>
                                             </p>
-                                            <p>📞 +94 76 987 6543 | 📧 info@nilavelidiving.com</p>
+                                            <p className='mb-1'>📞 +94 76 030 5657</p>
+                                            <p>📧 info@nilavelidivingandsnorkelingtours.com</p>
 
                                             <a
-                                                href="https://www.nilavelidivingandsnorkelingtours.com/"
+                                                href="https://www.nilavelidivingandsnorkelingtours.com/contact.html#contact_form"
                                                 className="btn btn-outline-primary mt-2"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
