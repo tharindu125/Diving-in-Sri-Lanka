@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import { Card, Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaCalendarAlt, FaWater } from 'react-icons/fa';
 
+import Image from '../assets/fun-diving-4.jpg';
 
 function Home() {
     useEffect(() => {
@@ -116,7 +117,7 @@ function Home() {
                                     <Row className="align-items-start g-3">
                                         <Col md={4}>
                                             <img
-                                                src="/src/assets/fun-diving-4.jpg"
+                                                src={Image}
                                                 alt="Diving Mirissa"
                                                 className="img-fluid rounded-3"
                                             />
@@ -221,7 +222,7 @@ function Home() {
                                     <Row className="align-items-start g-3">
                                         <Col md={4}>
                                             <img
-                                                src="/src/assets/fun-diving-4.jpg"
+                                                src={Image}
                                                 alt="Diving in Nilaveli"
                                                 className="img-fluid rounded-3"
                                             />
