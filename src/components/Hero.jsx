@@ -23,8 +23,7 @@ function Hero() {
 //   }, []);
 
   return (
-    <section
-      className="hero-section bg-light py-0 min-vh-100 d-flex align-items-center transition-hero">
+    <section className="hero-section bg-light py-0 min-vh-100 d-flex align-items-center transition-hero">
       <Container>
           <Row className="align-items-center gy-4">
             {/* Left text content */}
@@ -59,7 +58,7 @@ function Hero() {
               </h1>
 
               <div className="d-md-flex bottom-0 end-0 me-4 fs-5 fade-in-load delay-1 hero_subtitle-2">
-                <p className="text-muted mb-0">Explore the amazing memories for life</p>
+                <p className="mb-0">Explore the amazing memories for life</p>
               </div>
             </Col>
           </Row>

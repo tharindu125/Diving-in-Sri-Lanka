@@ -36,7 +36,7 @@ function Home() {
             <Hero />
 
             <Container className="py-5">
-                <h2 className="text-center mb-4" data-aos="zoom-in">Explore Diving in Sri Lanka</h2>
+                <h2 className="text-center mb-4 fw-bold" data-aos="zoom-in" style={{color: '#0bd3d4'}}>Explore Diving in Sri Lanka</h2>
                 <p className="text-center mb-5" data-aos="fade-up">
                     Discover world-class dive sites, shipwrecks, coral reefs, and vibrant marine life in different coastal regions.
                 </p>
@@ -95,9 +95,9 @@ function Home() {
                 </Row>
 
                 <div className="mt-5" data-aos="fade-up">
-                    <h4 className="text-center mb-3">When to Dive Where?</h4>
+                    <h3 className="text-center mb-3 fw-bold" style={{color: '#0bd3d4'}}>When to Dive Where?</h3>
                     <Tab.Container defaultActiveKey="west">
-                        <Nav variant="pills" className="justify-content-center mb-3">
+                        <Nav variant="pills" className="justify-content-center mb-3 gap-3">
                             <Nav.Item>
                                 <Nav.Link eventKey="west">South Coast</Nav.Link>
                             </Nav.Item>
@@ -108,7 +108,7 @@ function Home() {
 
                         <Tab.Content>
                             {/* WEST */}
-                            <Tab.Pane eventKey="west">
+                            <Tab.Pane eventKey="west" id='south_coast'>
                                 <p className="text-center mb-4">
                                     From <strong>November to April</strong>, the west and south coasts (Hikkaduwa, Unawatuna, Mirissa) offer the best diving due to calm seas.
                                 </p>
@@ -143,9 +143,9 @@ function Home() {
                                                 Explore the beautiful underwater world of Mirissa with experienced instructors and a variety of dive packages.
                                             </p>
                                             <ul className="mb-2">
-                                                <li>💼 PADI Certification Courses</li>
-                                                <li>🚤 Snorkeling & Reef Diving</li>
-                                                <li>🌴 Located near Mirissa Beach</li>
+                                                <li>PADI Certification Courses</li>
+                                                <li>Snorkeling & Reef Diving</li>
+                                                <li>Located near Mirissa Beach</li>
                                             </ul>
                                             <p className="mb-1">
                                                 🔗 <a href="https://www.divingmirissa.com/" target="_blank" rel="noopener noreferrer">www.divingmirissa.com</a>
@@ -179,7 +179,17 @@ function Home() {
                                                         data-bs-parent="#faqMirissa"
                                                     >
                                                         <div className="accordion-body">
-                                                            We offer beginner-friendly fun dives, reef dives, wreck dives, and full PADI certification programs.
+                                                            <p>We offer a variety of exciting snorkeling and diving experiences for all levels:</p>
+                                                            <ul className="mb-2">
+                                                                <li><strong>Pigeon Island Snorkeling Tour</strong> – Explore vibrant coral reefs and marine life</li>
+                                                                <li><strong>White Rock Snorkeling Tour</strong> – A scenic underwater adventure for all ages</li>
+                                                                <li><strong>Fun Diving</strong> – Enjoy relaxed dives guided by certified instructors</li>
+                                                                <li><strong>Night Diving</strong> – Witness the magical transformation of the reef after dark</li>
+                                                                <li><strong>Discover Scuba Diving</strong> – Perfect for beginners to try diving for the first time</li>
+                                                                <li><strong>Whales & Dolphins Watching Tours</strong> – Catch a glimpse of majestic marine giants</li>
+                                                                <li><strong>PADI Courses</strong> – From beginner to pro-level certification programs</li>
+                                                                <li><strong>Night Snorkeling</strong> – A unique nighttime reef experience under the stars</li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -205,6 +215,28 @@ function Home() {
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" id="nilaveliQ2">
+                                                        <button
+                                                            className="accordion-button collapsed"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#nilaveliA2"
+                                                        >
+                                                            Do you offer snorkeling?
+                                                        </button>
+                                                    </h2>
+                                                    <div
+                                                        id="nilaveliA2"
+                                                        className="accordion-collapse collapse"
+                                                        data-bs-parent="#faqNilaveli"
+                                                    >
+                                                        <div className="accordion-body">
+                                                            Yes! We offer snorkeling tours to Pigeon Island and nearby reefs, perfect for families and beginners.
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </Col>
                                     </Row>
@@ -213,7 +245,7 @@ function Home() {
                             </Tab.Pane>
 
                             {/* EAST */}
-                            <Tab.Pane eventKey="east">
+                            <Tab.Pane eventKey="east" id='east_coast'>
                                 <p className="text-center mb-4">
                                     From <strong>May to October</strong>, the east coast (Trincomalee, Batticaloa, Nilaveli) becomes ideal for clear-water diving.
                                 </p>
@@ -248,9 +280,9 @@ function Home() {
                                                 Experience stunning marine biodiversity, crystal-clear waters, and unforgettable dives at Nilaveli — ideal from May to October.
                                             </p>
                                             <ul className="mb-2">
-                                                <li>💼 Daily Dive Trips & PADI Courses</li>
-                                                <li>🐠 Coral Reefs, Turtles, Shipwrecks</li>
-                                                <li>📍 Near Pigeon Island Marine Sanctuary</li>
+                                                <li>Daily Dive Trips & PADI Courses</li>
+                                                <li>Coral Reefs, Turtles, Shipwrecks</li>
+                                                <li>Near Pigeon Island Marine Sanctuary</li>
                                             </ul>
                                             <p className="mb-1">
                                                 🔗 <a href="https://www.nilavelidivingandsnorkelingtours.com/" target="_blank" rel="noopener noreferrer">www.nilavelidivingandsnorkelingtours.com</a>
@@ -285,7 +317,39 @@ function Home() {
                                                         data-bs-parent="#faqNilaveli"
                                                     >
                                                         <div className="accordion-body">
-                                                            Expect to see colorful coral reefs, reef fish, turtles, and occasional blacktip reef sharks around Pigeon Island.
+                                                            <p>We offer a variety of exciting snorkeling and diving experiences for all levels:</p>
+                                                            <ul className="mb-2">
+                                                                <li><strong>Pigeon Island Snorkeling Tour</strong> – Explore vibrant coral reefs and marine life</li>
+                                                                <li><strong>White Rock Snorkeling Tour</strong> – A scenic underwater adventure for all ages</li>
+                                                                <li><strong>Fun Diving</strong> – Enjoy relaxed dives guided by certified instructors</li>
+                                                                <li><strong>Night Diving</strong> – Witness the magical transformation of the reef after dark</li>
+                                                                <li><strong>Discover Scuba Diving</strong> – Perfect for beginners to try diving for the first time</li>
+                                                                <li><strong>Whales & Dolphins Watching Tours</strong> – Catch a glimpse of majestic marine giants</li>
+                                                                <li><strong>PADI Courses</strong> – From beginner to pro-level certification programs</li>
+                                                                <li><strong>Night Snorkeling</strong> – A unique nighttime reef experience under the stars</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div className="accordion-item">
+                                                    <h2 className="accordion-header" id="headingTwo">
+                                                        <button
+                                                            className="accordion-button collapsed"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseTwo"
+                                                        >
+                                                            Do you provide equipment?
+                                                        </button>
+                                                    </h2>
+                                                    <div
+                                                        id="collapseTwo"
+                                                        className="accordion-collapse collapse"
+                                                        data-bs-parent="#faqMirissa"
+                                                    >
+                                                        <div className="accordion-body">
+                                                            Yes! We provide full equipment including wetsuits, fins, masks, tanks, and regulators.
                                                         </div>
                                                     </div>
                                                 </div>

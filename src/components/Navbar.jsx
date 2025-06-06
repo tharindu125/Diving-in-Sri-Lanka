@@ -10,8 +10,8 @@ function CustomNavbar() {
   return (
     <Navbar expand="lg" fixed="top" className="bg-light shadow-sm">
       <Container>
-        <Navbar.Brand as={Link} to="/" className="fw-bold fs-4 d-flex align-items-center gap-2">
-          Diving In Sri Lanka
+        <Navbar.Brand as={Link} to="/" className="fw-bold fs-3 d-flex align-items-center gap-2">
+          <span style={{color: '#0bd3d4'}}>Diving In</span>  <span style={{color: '#f890e8'}}>Sri Lanka</span>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="main-navbar" />
@@ -23,7 +23,7 @@ function CustomNavbar() {
             <Nav.Link as={Link} to="/#contact" className={getNavLinkClass('/bookings')}>Contact</Nav.Link>
             <Nav.Link as={Link} to="/#about" className={getNavLinkClass('/about')}>About Us</Nav.Link> */}
 
-            <Nav.Item className="ms-3">
+            {/* <Nav.Item className="ms-3">
               <Link to="https://www.divingmirissa.com/" className="btn btn-outline-primary fw-semibold">
                 Diving In Mirissa
               </Link>
@@ -33,7 +33,7 @@ function CustomNavbar() {
               <Link to="https://www.nilavelidivingandsnorkelingtours.com/" className="btn btn-outline-primary fw-semibold">
                 Diving In Nilaveli
               </Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
