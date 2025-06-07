@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Card, Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { FaMapMarkerAlt, FaCalendarAlt, FaWater } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp, FaTiktok } from 'react-icons/fa';
 
 import Image from '../assets/fun-diving-4.jpg';
 
@@ -125,7 +126,7 @@ function Home() {
                                                 <iframe
                                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d992.1042948617126!2d80.479899!3d5.937093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13fdd8ea6306f%3A0xbe2c68b941a47aff!2sDiving%20Mirissa!5e0!3m2!1sen!2slk!4v1748949904391!5m2!1sen!2slk"
                                                     width="100%"
-                                                    height="180"
+                                                    height="230"
                                                     style={{ border: 0 }}
                                                     allowFullScreen=""
                                                     loading="lazy"
@@ -142,19 +143,72 @@ function Home() {
                                             <p>
                                                 Explore the beautiful underwater world of Mirissa with experienced instructors and a variety of dive packages.
                                             </p>
-                                            <ul className="mb-2">
+                                            <ul className="mb-4">
                                                 <li>PADI Certification Courses</li>
                                                 <li>Snorkeling & Reef Diving</li>
                                                 <li>Located near Mirissa Beach</li>
                                             </ul>
-                                            <p className="mb-1">
+                                            <p className="mb-1 ms-3">
                                                 🔗 <a href="https://www.divingmirissa.com/" target="_blank" rel="noopener noreferrer">www.divingmirissa.com</a>
                                             </p>
-                                            <p>📞 +94 71 031 0253 | 📧 info@divingmirissa.com</p>
+                                            <p className='ms-3'>📞 +94 71 031 0253 | 📧 info@divingmirissa.com</p>
+
+                                            <div className="d-md-flex gap-3 mb-4 ms-3">
+                                                <a
+                                                    href="https://www.facebook.com/divingmirissa"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#3b5998', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaFacebookF />
+                                                </a>
+
+                                                <a
+                                                    href="https://www.instagram.com/divingmirissa/"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#C13584', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaInstagram />
+                                                </a>
+
+                                                <a
+                                                    href="https://www.youtube.com/@divingmirissa"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#FF0000', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaYoutube />
+                                                </a>
+
+                                                <a
+                                                    href="https://www.tiktok.com/@divingmirissa"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#000000', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaTiktok />
+                                                </a>
+
+                                                <a
+                                                    href="https://wa.me/+94710310253"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#25D366', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaWhatsapp />
+                                                </a>
+                                            </div>
 
                                             <a
                                                 href="https://www.divingmirissa.com/#contact_form"
-                                                className="btn btn-outline-primary mt-2"
+                                                className="btn btn-outline-light mt-2 ms-3"
+                                                style={{background: '#0bd3d4', color: '#ffffff'}}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
@@ -179,18 +233,21 @@ function Home() {
                                                         data-bs-parent="#faqMirissa"
                                                     >
                                                         <div className="accordion-body">
-                                                            <p>We offer a variety of exciting snorkeling and diving experiences for all levels:</p>
-                                                            <ul className="mb-2">
-                                                                <li><strong>Pigeon Island Snorkeling Tour</strong> – Explore vibrant coral reefs and marine life</li>
-                                                                <li><strong>White Rock Snorkeling Tour</strong> – A scenic underwater adventure for all ages</li>
-                                                                <li><strong>Fun Diving</strong> – Enjoy relaxed dives guided by certified instructors</li>
-                                                                <li><strong>Night Diving</strong> – Witness the magical transformation of the reef after dark</li>
-                                                                <li><strong>Discover Scuba Diving</strong> – Perfect for beginners to try diving for the first time</li>
-                                                                <li><strong>Whales & Dolphins Watching Tours</strong> – Catch a glimpse of majestic marine giants</li>
-                                                                <li><strong>PADI Courses</strong> – From beginner to pro-level certification programs</li>
-                                                                <li><strong>Night Snorkeling</strong> – A unique nighttime reef experience under the stars</li>
+                                                            <p>We offer a wide range of exciting ocean adventures and diving experiences for all skill levels:</p>
+                                                            <ul className="mb-2 list-unstyled">
+                                                                <li><strong>Fun Diving</strong> – Enjoy relaxing dives guided by professionals</li>
+                                                                <li><strong>Night Diving</strong> – Discover the magic of the reef after sunset</li>
+                                                                <li><strong>Discover Scuba Diving</strong> – Beginner-friendly diving introduction program</li>
+                                                                <li><strong>Snorkeling With Turtles</strong> – Swim alongside gentle sea turtles in their natural habitat</li>
+                                                                <li><strong>Whales & Dolphins Watching Tours</strong> – See majestic whales and playful dolphins up close</li>
+                                                                <li><strong>Sunset Boat Tours</strong> – Unwind with breathtaking views of the tropical sunset</li>
+                                                                <li><strong>Kayak Tours</strong> – Paddle through serene waters and coastal beauty</li>
+                                                                <li><strong>Fishing & Dolphin Watching Tours</strong> – Combine thrilling fishing with dolphin spotting</li>
+                                                                <li><strong>PADI Courses</strong> – Get certified with globally recognized dive programs</li>
+                                                                <li><strong>Night Snorkeling</strong> – Explore glowing reefs and marine life after dark</li>
                                                             </ul>
                                                         </div>
+
                                                     </div>
                                                 </div>
 
@@ -233,7 +290,7 @@ function Home() {
                                                         data-bs-parent="#faqNilaveli"
                                                     >
                                                         <div className="accordion-body">
-                                                            Yes! We offer snorkeling tours to Pigeon Island and nearby reefs, perfect for families and beginners.
+                                                            Yes! We offer snorkeling tours in turtle beach and nearby reefs, perfect for families and beginners.
                                                         </div>
                                                     </div>
                                                 </div>
@@ -262,7 +319,7 @@ function Home() {
                                                 <iframe
                                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7888.016861288978!2d81.191155!3d8.690747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afbbf000ab4ca19%3A0xd0ed0b4b52bc4d90!2sNilaveli%20diving%20and%20snorkeling%20tours!5e0!3m2!1sen!2slk!4v1748950009434!5m2!1sen!2slk"
                                                     width="100%"
-                                                    height="180"
+                                                    height="250"
                                                     style={{ border: 0 }}
                                                     allowFullScreen=""
                                                     loading="lazy"
@@ -279,20 +336,73 @@ function Home() {
                                             <p>
                                                 Experience stunning marine biodiversity, crystal-clear waters, and unforgettable dives at Nilaveli — ideal from May to October.
                                             </p>
-                                            <ul className="mb-2">
+                                            <ul className="mb-4">
                                                 <li>Daily Dive Trips & PADI Courses</li>
                                                 <li>Coral Reefs, Turtles, Shipwrecks</li>
                                                 <li>Near Pigeon Island Marine Sanctuary</li>
                                             </ul>
-                                            <p className="mb-1">
+                                            <p className="mb-1 ms-3">
                                                 🔗 <a href="https://www.nilavelidivingandsnorkelingtours.com/" target="_blank" rel="noopener noreferrer">www.nilavelidivingandsnorkelingtours.com</a>
                                             </p>
-                                            <p className='mb-1'>📞 +94 76 030 5657</p>
-                                            <p>📧 info@nilavelidivingandsnorkelingtours.com</p>
+                                            <p className='mb-1 ms-3'>📞 +94 76 030 5657</p>
+                                            <p className='ms-3'>📧 info@nilavelidivingandsnorkelingtours.com</p>
+
+                                            <div className="d-md-flex gap-3 mb-4 ms-3">
+                                                <a
+                                                    href="https://www.facebook.com/divingmirissa"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#3b5998', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaFacebookF />
+                                                </a>
+
+                                                <a
+                                                    href="https://www.instagram.com/divingmirissa/"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#C13584', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaInstagram />
+                                                </a>
+
+                                                <a
+                                                    href="https://www.youtube.com/@divingmirissa"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#FF0000', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaYoutube />
+                                                </a>
+
+                                                <a
+                                                    href="https://www.tiktok.com/@divingmirissa"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#000000', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaTiktok />
+                                                </a>
+
+                                                <a
+                                                    href="https://wa.me/+94760305657"
+                                                    className="icon-link"
+                                                    style={{ backgroundColor: '#25D366', color: '#fff', padding: '10px', borderRadius: '50%' }}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <FaWhatsapp />
+                                                </a>
+                                            </div>
 
                                             <a
                                                 href="https://www.nilavelidivingandsnorkelingtours.com/contact.html#contact_form"
-                                                className="btn btn-outline-primary mt-2"
+                                                className="btn btn-outline-light mt-2 ms-3"
+                                                style={{background: '#0bd3d4', color: '#ffffff'}}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >

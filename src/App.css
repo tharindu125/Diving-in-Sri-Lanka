@@ -110,13 +110,12 @@
   color: #ffffff;
 }
 
-/* .hero-section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-} */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 1;
+}
 
 .hero-section::before {
   content: "";
