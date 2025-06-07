@@ -1,11 +1,15 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function CustomNavbar() {
-//   const location = useLocation();
+  const location = useLocation();
 
-//   const getNavLinkClass = (path) =>
-//     location.pathname === path ? 'fw-bold text-primary' : 'text-dark';
+const getNavLinkClass = (path) => {
+  const fullPath = location.pathname + location.hash;
+  return fullPath === path ? 'fw-bold text-primary' : 'text-dark';
+};
+
 
   return (
     <Navbar expand="lg" fixed="top" className="bg-light shadow-sm">
@@ -18,10 +22,11 @@ function CustomNavbar() {
 
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-center gap-3">
-            {/* <Nav.Link as={Link} to="/" className={getNavLinkClass('/')}>Home</Nav.Link>
-            <Nav.Link as={Link} to="/portfolio" className={getNavLinkClass('/portfolio')}>Gallery</Nav.Link>
-            <Nav.Link as={Link} to="/#contact" className={getNavLinkClass('/bookings')}>Contact</Nav.Link>
-            <Nav.Link as={Link} to="/#about" className={getNavLinkClass('/about')}>About Us</Nav.Link> */}
+            {/* <Nav.Link as={Link} to="/" className={getNavLinkClass('/')}>Home</Nav.Link> */}
+            <Nav.Link as={Link} to="/#gallery" className={getNavLinkClass('/#gallery')}>Gallery</Nav.Link>
+            <Nav.Link as={Link} to="/#when_to_dive_where" className={getNavLinkClass('/#when_to_dive_where')}>When to Dive Where?</Nav.Link>
+
+            {/* <Nav.Link as={Link} to="/#about" className={getNavLinkClass('/about')}>About Us</Nav.Link> */}
 
             {/* <Nav.Item className="ms-3">
               <Link to="https://www.divingmirissa.com/" className="btn btn-outline-primary fw-semibold">

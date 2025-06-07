@@ -35,10 +35,11 @@ function Hero() {
                 {/* Desktop social icons */}
                 <div className="d-md-flex gap-3 position-absolute bottom-0 start-0 mb-4 ms-4 fs-5">
                     {/* Button */}
-                    <Button as={Link} to="https://www.divingmirissa.com/" className="fw-bold text-dark hero-button fade-in-load delay-2 ">
-                        Diving In Mirissa
+                    <Button as="a" href="#when_to_dive_where" className="fw-bold text-dark hero-button fade-in-load delay-2">
+                      Diving In Mirissa
                     </Button>
-                    <Button as={Link} to="https://www.nilavelidivingandsnorkelingtours.com/" className="fw-bold text-dark hero-button fade-in-load delay-2 ">
+
+                    <Button as="a" href="#when_to_dive_where" className="fw-bold text-dark hero-button fade-in-load delay-2 ">
                         Diving In Nilaveli
                     </Button>
                 </div>

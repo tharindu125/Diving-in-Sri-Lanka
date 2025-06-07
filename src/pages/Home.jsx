@@ -1,5 +1,6 @@
 // import React, { useState } from 'react';
 import Hero from '../components/Hero'
+import Gallery from '../components/Gallery';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -95,7 +96,7 @@ function Home() {
                     ))}
                 </Row>
 
-                <div className="mt-5" data-aos="fade-up">
+                <div className="mt-5" data-aos="fade-up" id='when_to_dive_where'>
                     <h3 className="text-center mb-3 fw-bold" style={{color: '#0bd3d4'}}>When to Dive Where?</h3>
                     <Tab.Container defaultActiveKey="west">
                         <Nav variant="pills" className="justify-content-center mb-3 gap-3">
@@ -153,7 +154,7 @@ function Home() {
                                             </p>
                                             <p className='ms-3'>📞 +94 71 031 0253 | 📧 info@divingmirissa.com</p>
 
-                                            <div className="d-md-flex gap-3 mb-4 ms-3">
+                                            <div className="d-flex gap-3 mb-4 ms-3">
                                                 <a
                                                     href="https://www.facebook.com/divingmirissa"
                                                     className="icon-link"
@@ -347,7 +348,7 @@ function Home() {
                                             <p className='mb-1 ms-3'>📞 +94 76 030 5657</p>
                                             <p className='ms-3'>📧 info@nilavelidivingandsnorkelingtours.com</p>
 
-                                            <div className="d-md-flex gap-3 mb-4 ms-3">
+                                            <div className="d-flex gap-3 mb-4 ms-3">
                                                 <a
                                                     href="https://www.facebook.com/divingmirissa"
                                                     className="icon-link"
@@ -496,7 +497,8 @@ function Home() {
                 </div>
 
             </Container>
-
+            
+            <Gallery />
         </>
     )
 }
