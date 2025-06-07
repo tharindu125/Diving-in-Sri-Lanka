@@ -23,7 +23,7 @@ const getNavLinkClass = (path) => {
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-center gap-3">
             {/* <Nav.Link as={Link} to="/" className={getNavLinkClass('/')}>Home</Nav.Link> */}
-            <Nav.Link as={Link} to="/#gallery" className={getNavLinkClass('/#gallery')}>Gallery</Nav.Link>
+            <Nav.Link as={Link} to="/#gallery-section" className={getNavLinkClass('/#gallery')}>Gallery</Nav.Link>
             <Nav.Link as={Link} to="/#when_to_dive_where" className={getNavLinkClass('/#when_to_dive_where')}>When to Dive Where?</Nav.Link>
 
             {/* <Nav.Link as={Link} to="/#about" className={getNavLinkClass('/about')}>About Us</Nav.Link> */}
