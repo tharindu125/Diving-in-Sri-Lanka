@@ -26,7 +26,7 @@ function Home() {
         {
             name: 'Trincomalee',
             season: 'May - October',
-            description: 'Clear waters, marine life.',
+            description: 'Clear waters, marine life & shipwrecks.',
             aos: 'fade-left',
             image: '/src/assets/react.svg'
         }
