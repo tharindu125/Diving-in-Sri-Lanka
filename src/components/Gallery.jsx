@@ -37,7 +37,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section className="gallery-section bg-white">
+      <section id="gallery-section" className="gallery-section bg-white">
         <h2 className="text-center mb-4 fw-bold" data-aos="zoom-in" style={{color: '#0bd3d4'}}>Diving in Sri Lanka Gallery</h2>
         <p className="text-center mb-5" data-aos="fade-up">
             Discover world-class dive sites, shipwrecks, coral reefs, and vibrant marine life in different coastal regions.
