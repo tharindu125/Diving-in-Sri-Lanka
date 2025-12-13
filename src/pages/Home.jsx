@@ -1,6 +1,7 @@
 // import React, { useState } from 'react';
 import Hero from '../components/Hero'
 import Gallery from '../components/Gallery';
+import SEO from '../components/SEO';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,6 +36,11 @@ function Home() {
 
     return (
         <>
+            <SEO
+                title="Diving In Sri Lanka | PADI Certified Scuba Diving Center"
+                description="Experience world-class diving in Mirissa and Nilaveli with certified PADI instructors. Book your underwater adventure today!"
+                keywords="scuba diving, sri lanka, padi certification, mirissa diving, nilaveli diving"
+            />
             <Hero />
 
             <Container className="py-5">

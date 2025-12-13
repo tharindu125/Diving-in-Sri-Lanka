@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css'
 import Home from '../src/pages/Home'
 
@@ -22,14 +23,16 @@ function App() {
   }, [location]);
 
   return (
-    <>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home />} />
-      </Routes>
-      <Footer/>
-    </>
-  )
+    <HelmetProvider>
+      <>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+        <Footer/>
+      </>
+    </HelmetProvider>
+  );
 }
 
 export default App
