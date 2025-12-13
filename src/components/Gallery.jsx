@@ -75,7 +75,8 @@ const Gallery = () => {
               >
                 <img
                   src={img.url}
-                  alt={img.category}
+                  alt={`Scuba diving in ${img.category.replace('Diving In ', '')} - ${img.category.includes('Mirissa') ? 'Whale sharks and coral reefs' : 'Shipwrecks and marine life'}`}
+                  loading="lazy"
                   className="img-fluid rounded shadow-lg"
                   data-aos="fade-up" data-aos-delay="200"
                 />

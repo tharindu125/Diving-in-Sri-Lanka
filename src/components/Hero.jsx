@@ -28,8 +28,8 @@ function Hero() {
           <Row className="align-items-center gy-4">
             {/* Left text content */}
             <Col md={6} className="text-center text-md-start">
-                <p className="d-md-flex gap-3 position-absolute top-0 ms-4 hero_subtitle-1" data-aos="fade-right" data-aos-delay="200">
-                    Sri Lanka is home to two breathtaking<br />diving locations that every<br />underwater enthusiast must explore!
+                <p className="d-md-flex gap-3 position-absolute top-0 ms-4 hero_subtitle-1" data-aos="fade-right" data-aos-delay="200" itemProp="description">
+                    Sri Lanka is home to two breathtaking diving locations that every underwater enthusiast must explore! PADI-certified diving center offering scuba lessons, guided dives, and equipment rental in Mirissa and Nilaveli.
                 </p>
 
                 {/* Desktop social icons */}
@@ -46,7 +46,7 @@ function Hero() {
             </Col>
 
             <Col md={6} className="test-md-end" >
-              <h1 className="top-50 end-0 fw-bold hero-title"  data-aos="zoom-out" data-aos-delay="200">
+              <h1 className="top-50 end-0 fw-bold hero-title" data-aos="zoom-out" data-aos-delay="200" itemProp="name">
                 Diving In Sri Lanka
               </h1>
 
