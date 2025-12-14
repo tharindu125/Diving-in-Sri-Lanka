@@ -15,6 +15,7 @@ const getNavLinkClass = (path) => {
     <Navbar expand="lg" fixed="top" className="bg-light shadow-sm">
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold fs-3 d-flex align-items-center gap-2">
+          <img src="/logo.png" alt="Diving In Sri Lanka Logo" style={{ height: '40px' }} />
           <span style={{color: '#0bd3d4'}}>Diving In</span>  <span style={{color: '#f890e8'}}>Sri Lanka</span>
         </Navbar.Brand>
 
@@ -25,20 +26,6 @@ const getNavLinkClass = (path) => {
             {/* <Nav.Link as={Link} to="/" className={getNavLinkClass('/')}>Home</Nav.Link> */}
             <Nav.Link as={Link} to="/#gallery-section" className={getNavLinkClass('/#gallery')}>Gallery</Nav.Link>
             <Nav.Link as={Link} to="/#when_to_dive_where" className={getNavLinkClass('/#when_to_dive_where')}>When to Dive Where?</Nav.Link>
-
-            {/* <Nav.Link as={Link} to="/#about" className={getNavLinkClass('/about')}>About Us</Nav.Link> */}
-
-            {/* <Nav.Item className="ms-3">
-              <Link to="https://www.divingmirissa.com/" className="btn btn-outline-primary fw-semibold">
-                Diving In Mirissa
-              </Link>
-            </Nav.Item>
-
-            <Nav.Item className="ms-3">
-              <Link to="https://www.nilavelidivingandsnorkelingtours.com/" className="btn btn-outline-primary fw-semibold">
-                Diving In Nilaveli
-              </Link>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
